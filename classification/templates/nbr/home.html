@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>welcome</title>
+  </head>
+  <body>
+    <h1>welcome to main page</h1>
+    <form class="" action="run/" enctype="multipart/form-data" method="post">
+      {% csrf_token %}
+    upload image:<input type="file" name="filePath" value="">
+
+    <h2>{{p}}</h2>
+    <div><button type="submit" name="button">Submit</button></div>
+    <img src={{p}} alt="imagename">
+    {%if x%}
+
+    {{x.name}}
+    {{x.about}}
+
+    {%endif%}
+
+    </form>
+
+  </body>
+</html>
